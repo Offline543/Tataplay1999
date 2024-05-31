@@ -142,15 +142,278 @@
 
     <iframe id="channelFrame" allowfullscreen allow="fullscreen"></iframe> <!-- Moved iframe to the top -->
 
+    <div class="category-dropdown">
+        <label for="category">Select Category:</label>
+        <select id="category">
+            <option value="">All</option>
+           <option value="Kannada">Kannada</option><option value="Telugu">Telugu</option><option value="</option><option value="Tamil">Tamil</option><option value="Malayalam">Malayalam</option><option value="Bengali">Bengali</option><option value="Marathi">Marathi</option><option value="Oriya">Oriya</option><option value="HINDI">Hindi</option>   </select>
+    </div>
+
     <div class="search-input">
         <label for="search">Search Channels:</label>
         <input type="text" id="search" name="search" placeholder="Enter channel name...">
     </div>
-    
 
-    <div class="channel" data-category="HINDI" onclick="openChannel('Zee Tv HD.html')"><img src="https://jiotvimages.cdn.jio.com/dare_images/images/Zee_TV_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee TV HD</div></div></div>
+    <div class="container" id="channelsList">
+        <div class="channel" data-category="Hindi" onclick="openChannel('Zee Yuva.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Yuva.png" alt="OFFLINE™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Yuva</div></div></div>
 
-     <script>
+<div class="channel" data-category="Tamil" onclick="openChannel('https://www.bigcric.me/api.html?channel=Tata%20Play%20Videshi%20Kahaniyan')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Thirai.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Thirai</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Zee Telugu HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Telugu_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Telugu HD</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('Zee Tamil HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Tamil_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Tamil HD</div></div></div>
+
+<div class="channel" data-category="HINDI" onclick="openChannel('Zee Talkies HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Talkies_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Talkies HD</div></div></div>
+
+<div class="channel" data-category="Oriya" onclick="openChannel('Zee Sarthak.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sarthak_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Sarthak</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Zee Picchar HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Picchar_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Picchar HD.html</div></div></div>
+
+<div class="channel" data-category="Marathi" onclick="openChannel('Zee Marathi HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Marathi_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Marathi HD</div></div></div>
+
+<div class="channel" data-category="Malayalam" onclick="openChannel('Zee Keralam HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Keralam_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Keralam HD</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Zee Kannada HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Kannada_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Kannada HD</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Zee Kannada News.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Kannada_News.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Kannada News</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Zee Cinemalu HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Cinemalu_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Cinemalu HD</div></div></div>
+
+<div class="channel" data-category="HINDI" onclick="openChannel('Zee Chitramandir.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Chitramandir.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Chitramandir</div></div></div>
+
+<div class="channel" data-category="Bengali" onclick="openChannel('Zee Bangla cinema.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Bangla_Cinema.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Bangla Cinema</div></div></div>
+
+<div class="channel" data-category="Bengali" onclick="openChannel('Zee Bangla HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Bangla_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Bangla HD</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Vissa Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Vissa_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Vissa TV</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Udaya music.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_Music.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Udaya Music</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Udaya comedy.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_Comedy.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Udaya Comedy</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Udaya Movies.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_Movies.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Udaya Movies</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Udaya HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Udaya HD</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Tv9 Telugu News.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/TV9_Telugu_News.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">TV9 Telugu News</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Tv9 Karnataka.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/TV9_Karnataka.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">TV9 Karnataka</div></div></div>
+
+<div class="channel" data-category="Bengali" onclick="openChannel('Tv9 Bangla.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/TV9_Bangla.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">TV9 Bangla</div></div></div>
+
+<div class="channel" data-category="Malayalam" onclick="openChannel('Surya Music.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_Music.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Surya Music</div></div></div>
+
+<div class="channel" data-category="Malayalam" onclick="openChannel('Surya Movies.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_Movies.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Surya Movies</div></div></div>
+
+<div class="channel" data-category="Malayalam" onclick="openChannel('Surya HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Surya HD</div></div></div>
+
+<div class="channel" data-category="Malayalam" onclick="openChannel('Surya Comedy.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_Comedy.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Surya Comedy</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('Sun Tv HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_TV_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sun TV HD</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('Sun Music HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Music_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sun Music HD</div></div></div>
+
+<div class="channel" data-category="Marathi" onclick="openChannel('Sun Marathi.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Marathi.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sun Marathi</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('Sun Life.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Life.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sun Life</div></div></div>
+
+<div class="channel" data-category="Bengali" onclick="openChannel('Sun Bangla.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Bangla.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sun Bangla</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Sonic Telugu.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sonic_Telugu.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sonic Telugu</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('Sonic Tamil.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/sonic_Tamil.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">sonic Tamil</div></div></div>
+
+<div class="channel" data-category="Marathi" onclick="openChannel('Sonic Marathi.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sonic_Marathi.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sonic Marathi</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Sonic Kannada.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sonic_Kannada.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sonic Kannada</div></div></div>
+
+<div class="channel" data-category="Bengali" onclick="openChannel('Sonic Bangla.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sonic_Bangla.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sonic Bangla</div></div></div>
+
+<div class="channel" data-category="Oriya" onclick="openChannel('Sidharth Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sidharth_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sidharth TV</div></div></div>
+
+<div class="channel" data-category="Oriya" onclick="openChannel('Sidharth Gold.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sidharth_Gold.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sidharth Gold</div></div></div>
+
+<div class="channel" data-category="Marathi" onclick="openChannel('Shemaroo Marathibana.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Shemaroo_MarathiBana.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Shemaroo MarathiBana</div></div></div>
+
+<div class="channel" data-category="Marathi" onclick="openChannel('Sangeet Marathi.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sangeet_Marathi.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sangeet Marathi</div></div></div>
+
+<div class="channel" data-category="Marathi" onclick="openChannel('Saam Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Saam_Tv.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Saam Tv</div></div></div>
+
+ <div class="channel" data-category="Tamil" onclick="openChannel('Raj Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Raj TV</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Raj News Kannada.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_News_Kannada.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Raj News Kannada</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Raj Music Telugu.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_Music_Telugu.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Raj Music Telugu</div></div></div>
+
+<div class="channel" data-category="Malayalam" onclick="openChannel('Raj Music Malayalam.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_Music_Malayalam.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Raj Music Malayalam</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Raj Music Kannada.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_Music_Kannada.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Raj Music Kannada</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Public Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Public_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Public TV</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Public Music.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Public_Music.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Public Music</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('https://its-nayeemparvez.xyz/super-jio/play.php?watch=1633')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Public_Movies.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Public Movies</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Siri Kannada.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sirikannada.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Siri Kannada</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('Polimer Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Polimer_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Polimer TV</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Pogo Telugu.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Pogo_Telugu.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Pogo Telugu</div></div></div>
+
+<div class="channel" data-category=Tamil" onclick="openChannel('Pogo Tamil.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Pogo_Tamil.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Pogo Tamil</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('Pappers Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Peppers_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Peppers TV</div></div></div>
+
+<div class="channel" data-category=Tamil" onclick="openChannel('Nick Tamil.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Tamil.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Nick Tamil</div></div></div>
+
+<div class="channel" data-category="Malayalam" onclick="openChannel('Mazavali Manorama HD .html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Mazavali_Manorama_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Mazavali Manorama HD</div></div></div>
+
+<div class="channel" data-category="Bengali" onclick="openChannel('Maya Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Maya_Tv.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Maya Tv</div></div></div>
+
+<div class="channel" data-category="Malayalam" onclick="openChannel('Manorama News .html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Manorama_News.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Manorama News</div></div></div>
+
+<div class="channel" data-category="Oriya" onclick="openChannel('Manjari Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Manjari_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Manjari TV</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('Makkal Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Makkal_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Makkal TV</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('MKTv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/MK_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">MK TV</div></div></div>
+
+<div class="channel" data-category="Oriya" onclick="openChannel('MBC.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/MBC.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">MBC</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Kushi Tv .html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kushi_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Kushi TV</div></div></div>
+
+<div class="channel" data-category="Malayalam" onclick="openChannel('Kochu Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kochu_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Kochu TV</div></div></div>
+
+<div class="channel" data-category="Malayalam" onclick="openChannel('Kaumudy Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kaumudy_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Kaumudy TV</div></div></div>
+
+<div class="channel" data-category="Malayalam" onclick="openChannel('Kappa Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kappa_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Kappa TV</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('Kalaignar Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kalaignar_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Kalaignar TV</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('KTV HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/KTV_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">KTV HD</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('Jaya Tv HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jaya_TV_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Jaya TV HD</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('Jaya Plus.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jaya_Plus.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Jaya Plus</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('Jaya Max.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jaya_Max.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Jaya Max</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Gemini life.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Life.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Gemini Life</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Gemini Music HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Music_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Gemini Music HD</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Gemini Movies HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Movies_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Gemini Movies HD</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Gemini HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_TV_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Gemini TV HD</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Gemini Comedy.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Comedy.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Gemini Comedy</div></div></div>
+
+<div class="channel" data-category="Marathi" onclick="openChannel('Fakt Marathi.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Fakt_Marathi.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Fakt Marathi</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Etv Telugu.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Telugu.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">ETV Telugu</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Etv Plus.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Plus.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">ETV Plus</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Etv Cinema.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Cinema_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">ETV Cinema HD</div></div></div>
+
+<div class="channel" data-category="Oriya" onclick="openChannel('Ekamra Cinema.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ekamra_Cinema.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Ekamra Cinema</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('Discovery kids Tamil.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Kids_Tamil.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Discovery Kids Tamil</div></div></div>
+
+<div class="channel" data-category="Bengali" onclick="openChannel('Dhoom Music Bangla.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Dhoom_Music_Bangla.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Dhoom Music Bangla</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('DD9 Chanadana Kannada.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/DD9_chandana_kannada.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">DD9 chandana Kannada</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('DD Saptagiri.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Saptagiri.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">DD Saptagiri</div></div></div>
+
+<div class="channel" data-category="Malayalam" onclick="openChannel('DD Malayalm .html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Malayalam.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">DD Malayalam</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('D Tamil.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Channel_Tamil.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">D Tamil</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('Colors Tamil HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Tamil_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Colors Tamil HD</div></div></div>
+
+<div class="channel" data-category="Oriya" onclick="openChannel('Colors Oriya.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Oriya.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Colors Oriya</div></div></div>
+
+<div class="channel" data-category="Marathi" onclick="openChannel('Colors Marathi HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Chutti_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Colors Marathi HD</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Colors Kannada HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Kannada_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Colors Kannada HD</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Colors Kannada Cinema.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Kannada_Cinema.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Colors Kannada Cinema</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Colors Kannada .html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Kannada_SD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Colors Kannada SD</div></div></div>
+
+<div class="channel" data-category="Bengali" onclick="openChannel('Colors Bengali HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Bengali_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Colors Bengali HD</div></div></div>
+
+<div class="channel" data-category="Bengali" onclick="openChannel('Colors Bangla Cinema.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Bangla_Cinema.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Colors Bangla Cinema</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('Chutti Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Chutti_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Chutti TV</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Chintu Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Chintu_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Chintu Tv</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Cartoon Network Telugu.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Cartoon_Network_Telugu.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Cartoon Network Telugu</div></div></div>
+
+<div class="channel" data-category="Kannada" onclick="openChannel('Ayush Tv Kannada.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ayush_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Ayush TV</div></div></div>
+
+<div class="channel" data-category="Malayalam" onclick="openChannel('Asianet News.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Asianet_News.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Asianet News</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('Animal Planet HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Animal_Planet_HD_Tamil.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Animal Planet HD Tamil</div></div></div>
+
+<div class="channel" data-category="Malayalam" onclick="openChannel('Amrita TV .html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Amrita_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Amrita TV</div></div></div>
+
+<div class="channel" data-category="Malayalam" onclick="openChannel('Adithya Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Adithya_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Adithya TV</div></div></div>
+
+<div class="channel" data-category="Marathi" onclick="openChannel('9x Jhakaas.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/9x_Jhakaas.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">9x Jhakaas</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('10 Tv.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/10_TV.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">10 TV</div></div></div>
+
+<div class="channel" data-category="HINDI" onclick="openChannel('Sony HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">SONY HD</div></div></div>
+
+<div class="channel" data-category="HINDI" onclick="openChannel('Sony Sab HD.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SAB_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">SONY SAB HD</div></div></div>
+
+<div class="channel" data-category="HINDI" onclick="openChannel('Sony Pal.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pal.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">SONY PAL</div></div></div>
+
+<div class="channel" data-category="HINDI" onclick="openChannel('Sony Max Hd.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Max_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">SONY MAX HD</div></div></div>
+
+<div class="channel" data-category="HINDI" onclick="openChannel('Sony Pix Hd.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pix_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">SONY PIX HD</div></div></div>
+
+<div class="channel" data-category="HINI" onclick="openChannel('Sports18HD.html')"><img src="https://jiotvimages.cdn.jio.com/dare_images/images/Sports18_1_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sports18 1 HD</div></div></div>
+
+<div class="channel" data-category="HNDI" onclick="openChannel('Sports18 Khel.html')"><img src="https://jiotvimages.cdn.jio.com/dare_images/images/Sports18_Khel.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sports18 Khel</div></div></div>
+
+<div class="channel" data-category="Tamil" onclick="openChannel('Sony Ten 4 HD Tamil.html')"><img src="https://jiotvimages.cdn.jio.com/dare_images/images/Ten_4_HD_Tamil.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sony Ten 4 HD Tamil</div></div></div>
+
+<div class="channel" data-category="Telugu" onclick="openChannel('Sony Ten 4 HD Telugu.html')"><img src="https://jiotvimages.cdn.jio.com/dare_images/images/Ten_4_HD_Telugu.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sony Ten 4 HD Telugu</div></div></div>   
+
+<div class="channel" data-category="HINDI" onclick="openChannel('Zee Tv HD.html')"><img src="https://jiotvimages.cdn.jio.com/dare_images/images/Zee_TV_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee TV HD</div></div></div>
+
+<div class="channel" data-category="HINDI" onclick="openChannel('Colors HD.html')"><img src="https://jiotvimages.cdn.jio.com/dare_images/images/Colors_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Colors HD</div></div></div>
+
+<div class="channel" data-category="HINDI" onclick="openChannel('Zee Cinema HD.html')"><img src="https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Cinema_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Cinema HD</div></div></div>
+
+<div class="channel" data-category="HINDI" onclick="openChannel('And Pictures HD.html')"><img src="https://jiotvimages.cdn.jio.com/dare_images/images/And_Pictures_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">And Pictures HD</div></div></div>
+
+<div class="channel" data-category="HINDI" onclick="openChannel('B4u Movies.html')"><img src="https://jiotvimages.cdn.jio.com/dare_images/images/B4U_Movies.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">B4U Movies</div></div></div>
+
+<div class="channel" data-category="HINDI" onclick="openChannel('B4u Music.html')"><img src="https://jiotvimages.cdn.jio.com/dare_images/images/B4U_Music.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">B4U Music</div></div></div>
+
+<div class="channel" data-category="HINDI" onclick="openChannel('Zee Anmol Cinema.html')"><img src="https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Anmol_Cinema.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Anmol Cinema</div></div></div>
+
+<div class="channel" data-category="HINDI" onclick="openChannel('Zee Anmol.html')"><img src="https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Anmol.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Anmol</div></div></div>
+
+<div class="channel" data-category="HINDI" onclick="openChannel('Sony Pal.html')"><img src="https://jiotvimages.cdn.jio.com/dare_images/images/Sony_Pal.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sony Pal</div></div></div>
+
+<div class="channel" data-category="HINDI" onclick="openChannel('Sony Max HD.html')"><img src="https://jiotvimages.cdn.jio.com/dare_images/images/Sony_Max_HD.png" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Sony Max HD</div></div></div>
+
+
+
+
+
+
+
+
+
+<script>
         // Display a pop-up message when the page starts
         window.addEventListener("load", function() {
             var result = window.confirm("Join @VIP4k_TV for more updates?");
