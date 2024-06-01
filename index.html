@@ -143,7 +143,7 @@
     <iframe id="channelFrame" allowfullscreen allow="fullscreen"></iframe> <!-- Moved iframe to the top -->
 
     <div class="category-dropdown">
-        <label for="category">Select Category 👇</label>
+        <label for="category">Select Category </label>
         <select id="category">
             <option value="">All</option>
            
@@ -152,8 +152,62 @@
 
     <div class="search-input">
         <label for="search">Search Channels:</label>
-        <input type="text" id="search" name="search" placeholder="Enter channel name.🥰">
+        <input type="text" id="search" name="search" placeholder="Search...">
     </div>
 
     <div class="container" id="channelsList">
         <div class="channel" data-category="Hindi" onclick="openChannel('Zee Yuva.html')"><img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Yuva.png" alt="OFFLINE™" loading="lazy"><div class="channel-details"><div class="channel-name">Zee Yuva</div></div></div>
+
+
+
+
+
+<script>
+        // Display a pop-up message when the page starts
+        window.addEventListener("load", function() {
+            var result = window.confirm("Join @VIP4k_TV for more updates?");
+            if (result) {
+                window.location.href = "https://t.me/VIP4k_TV";
+            }
+        });
+
+        // Function to filter channels by category
+        document.getElementById('category').addEventListener('change', function() {
+            var category = this.value;
+            var channels = document.querySelectorAll('.channel');
+            channels.forEach(function(channel) {
+                if (category === '' || channel.getAttribute('data-category') === category) {
+                    channel.style.display = 'block';
+                } else {
+                    channel.style.display = 'none';
+                }
+            }); 
+        });
+
+        // Function to search channels by name
+        document.getElementById('search').addEventListener('input', function() {
+            var searchQuery = this.value.toLowerCase();
+            var channels = document.querySelectorAll('.channel');
+            channels.forEach(function(channel) {
+                var channelName = channel.querySelector('.channel-name').textContent.toLowerCase();
+                if (channelName.includes(searchQuery)) {
+                    channel.style.display = 'block';
+                } else {
+                    channel.style.display = 'none';
+                }
+            });
+        });
+
+        // Function to open channel in iframe
+        function openChannel(url) {
+            var finalUrl = '' + url;
+            var iframe = document.getElementById('channelFrame');
+            var pageTitle = document.getElementById('pageTitle');
+            iframe.src = finalUrl;
+            iframe.style.display = 'block';
+            pageTitle.style.display = 'none'; // Hide the h1 element
+            iframe.scrollIntoView({ behavior: 'smooth' }); // Scroll to the iframe
+        }
+    </script>
+</body>
+</html>            
