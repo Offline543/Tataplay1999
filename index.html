@@ -144,13 +144,12 @@
 
     
 
-    <div class="search-input">
-        <label for="search">Search Channels:</label>
-        <input type="text" id="search" name="search" placeholder="Enter channel name.🥰">
-    </div>
+    
 
     <div class="container" id="channelsList">
-        <div class="channel" data-category="" onclick="openChannel('https://t.me/VIP4k_TV')"><img src="https://gifdb.com/images/high/telegram-cute-blue-shades-logo-vsjoshidc3e9gylv.gif" alt="OFFLINE™" loading="lazy"><div class="channel-details"><div class="channel-name">JOIN TELEGRAM</div></div></div>
+        <div class="channel" data-category="" onclick="openChannel('https://i.ibb.co/NS8jKMg/giphy-1.gif')"><img src="https://gifdb.com/images/high/telegram-cute-blue-shades-logo-vsjoshidc3e9gylv.gif" alt="OFFLINE™" loading="lazy"><div class="channel-details"><div class="channel-name">JOIN TELEGRAM</div></div></div>
+
+
 
 <div class="channel" data-category="" onclick="openChannel('And Pictures HD.html')"><img src="https://ap2-prod-images.disco-api.com/2020/12/16/422ea635-4833-4401-bdaf-7c171c2e472c.png?bf=0&f=jpg&p=true&q=85&w=260" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">Animal Planet  </div></div></div>
 
@@ -167,13 +166,12 @@
 <div class="channel" data-category="" onclick="openChannel('And Pictures HD.html')"><img src="https://ap2-prod-images.disco-api.com/2020/12/16/644fb820-4583-4141-b251-bb2a70f2ca80.png?bf=0&f=jpg&p=true&q=85&w=260" alt="OFFLINE ™" loading="lazy"><div class="channel-details"><div class="channel-name">TLC</div></div></div>
 
 
-
       <script>
         // Display a pop-up message when the page starts
         window.addEventListener("load", function() {
-            var result = window.confirm("Join @Mr Smart IPTV for more updates?");
+            var result = window.confirm("Join @VIP4k_TV for more updates?");
             if (result) {
-                window.location.href = "https://t.me/mr_smart_iptv";
+                window.location.href = "https://t.me/VIP4k_TV";
             }
         });
 
@@ -181,7 +179,7 @@
         document.getElementById('category').addEventListener('change', function() {
             var category = this.value;
             var channels = document.querySelectorAll('.channel');
-            channels.forEach(functin(channel) {
+            channels.forEach(function(channel) {
                 if (category === '' || channel.getAttribute('data-category') === category) {
                     channel.style.display = 'block';
                 } else {
